@@ -9,7 +9,7 @@ resources:
       
   - name: sample-pipeline
     type: gitRepo
-    integration: gitlab-subint
+    integration: github
     pointer:
-      sourceName: ankul/sample_pipeline
-      branch: "bran/ch"
+      sourceName: mohit/sample_pipeline
+      branch: "test/pm7117"
