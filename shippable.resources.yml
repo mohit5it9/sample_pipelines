@@ -6,3 +6,10 @@ resources:
       sourceName: "library/nginx"
     seed:
       versionName: latest
+      
+  - name: sample-pipeline
+    type: gitRepo
+    integration: gitlab-subint
+    pointer:
+      sourceName: ankul/sample_pipeline
+      branch: "bran/ch"
