@@ -11,5 +11,5 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: mohit/sample_pipeline
+      sourceName: mohit5it9/sample_pipeline
       branch: "test/pm7117"
