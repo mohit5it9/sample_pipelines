@@ -11,7 +11,7 @@ jobs:
     type: manifest
     steps:
       - IN: box-sn
-      - OUT: trigger-dv-man
+      - IN: trigger-dv-man
   
 
   # - name: ecs-deploy-mohit
