@@ -10,7 +10,7 @@ jobs:
   - name: mohit-2
     type: manifest
     steps:
-      - IN: box-sn
+      - OUT: box-sn
       - IN: trigger-dv-man
   
 
