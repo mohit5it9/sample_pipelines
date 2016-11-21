@@ -10,8 +10,8 @@ jobs:
   - name: mohit-2
     type: manifest
     steps:
-      - IN: box-sn
-      - IN: trigger-dv-man
+      #- IN: box-sn
+      #- IN: trigger-dv-man
 
   # - name: ecs-deploy-mohit
   #   type: deploy
