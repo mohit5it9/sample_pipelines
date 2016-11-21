@@ -5,13 +5,13 @@ jobs:
       - script: echo 'this is a success'
     steps:
       - IN: box-nginx
-      - IN: trigger-dv-man
+      #- IN: trigger-dv-man
 
   - name: mohit-2
     type: manifest
     steps:
       - IN: box-sn
-      - IN: trigger-dv-man
+      #- IN: trigger-dv-man
 
   # - name: ecs-deploy-mohit
   #   type: deploy
