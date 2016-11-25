@@ -52,15 +52,13 @@ jobs:
 
   - name: tri-deploy-1
     type: deploy
-    on_start:
-      - NOTIFY: slackNotification
     on_success:
       - NOTIFY: slackNotification
     steps:
-      #- IN: mohit-2
-      - IN: mohit-1
+      - IN: mohit-2
+      #- IN: mohit-1
       - IN: tri-cluster
-      - IN: box-opts
+      #- IN: box-opts
       - TASK: managed
         deployMethod: upgrade
 
