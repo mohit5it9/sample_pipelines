@@ -109,6 +109,8 @@ jobs:
       - NOTIFY: slackNotification
     on_success:
       - NOTIFY: myEmail
+    on_failure:
+      - NOTIFY: slackNotification
     steps:
       - IN: ddc-cluster
       - IN: mohit-1
