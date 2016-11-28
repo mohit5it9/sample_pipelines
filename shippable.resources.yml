@@ -5,4 +5,4 @@ resources:
     pointer:
       sourceName: "library/nginx"
     seed:
-      versionName: "1.10"
+      versionName: latest
