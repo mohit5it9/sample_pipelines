@@ -66,11 +66,11 @@ resources:
   #   seed:
   #     interval: "*/2 * * * *"
 
-  - name: tri-cluster
-    type: cluster
-    integration: tripub
-    pointer:
-      region: "us-east-3"
+  #- name: tri-cluster
+  #  type: cluster
+  #  integration: tripub
+  #  pointer:
+  #    region: "us-east-3"
   
   #- name: tri-aws
   #  type: cluster
@@ -93,11 +93,11 @@ resources:
   #     sourceName: "small-cluster"
   #     region: "us-east1-d"
 
-  #- name: ddc-cluster
-  #  type: cluster
-  #  integration: ddc
-  #  pointer:
-  #    sourceName: "ddc-cluster"
+  - name: ddc-cluster
+    type: cluster
+    integration: ddc
+    pointer:
+      sourceName: "ddc-cluster"
 
   # - name: dcl-cluster
   #   type: cluster
