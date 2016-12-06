@@ -116,7 +116,12 @@ resources:
     pointer:
       recipients:
         - "#slack_notifications"
-        
+
+  - name: scale
+    type: replicas
+    version:
+      count: 2
+
   - name: myEmail
     type: notification
     pointer:
