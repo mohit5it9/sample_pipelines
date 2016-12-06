@@ -66,11 +66,11 @@ resources:
   #   seed:
   #     interval: "*/2 * * * *"
 
-  - name: tri-cluster
-    type: cluster
-    integration: tripub
-    pointer:
-      region: "us-east-3"
+  #- name: tri-cluster
+  #  type: cluster
+  #  integration: tripub
+  #  pointer:
+  #    region: "us-east-3"
   
   #- name: tri-aws
   #  type: cluster
