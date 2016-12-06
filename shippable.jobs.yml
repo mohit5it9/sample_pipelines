@@ -115,18 +115,18 @@ jobs:
   #     #- IN: mohit-2
   #     - IN: scale
 
-  # - name: ddc-deploy-boxsn
-  #   type: deploy
-  #   on_start:
-  #     - NOTIFY: slackNotification
-  #   on_success:
-  #     - NOTIFY: myEmail
-  #   on_failure:
-  #     - NOTIFY: slackNotification
-  #   steps:
-  #     - IN: ddc-cluster
-  #     #- IN: mohit-1
-  #     - IN: mohit-2
+  - name: ddc-deploy-boxsn
+    type: deploy
+    on_start:
+      - NOTIFY: slackNotification
+    on_success:
+      - NOTIFY: myEmail
+    on_failure:
+      - NOTIFY: slackNotification
+    steps:
+      - IN: ddc-cluster
+      #- IN: mohit-1
+      - IN: mohit-2
       #- IN: scale
 
   # - name: dcl-deploy
