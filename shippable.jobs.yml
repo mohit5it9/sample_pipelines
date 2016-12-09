@@ -17,6 +17,6 @@ jobs:
     type: release
     steps:
       - IN: alpha-release-job
-      - TASK: managed
         switch: off
+      - TASK: managed
         bump: rc
