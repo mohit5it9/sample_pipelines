@@ -5,10 +5,17 @@ jobs:
       - IN: nginx-image-3
       - TASK: managed
 
-  - name: release-job
+  - name: alpha-release-job
     type: release
     steps:
       - IN: nginx-manifest-3
       - IN: version-resource
+      - TASK: managed
+        bump: alpha
+
+  - name: tc-release-job
+    type: release
+    steps:
+      - IN: alpha-release-job
       - TASK: managed
         bump: rc
