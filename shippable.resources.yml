@@ -1,7 +1,7 @@
 resources:
   - name: nginx-image-3
     type: image
-    integration: "docker"
+    integration: "dockerhub"
     pointer:
       sourceName: "library/nginx"
     seed:
