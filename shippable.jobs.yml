@@ -20,3 +20,9 @@ jobs:
         switch: off
       - TASK: managed
         bump: rc
+
+  - name: foo-app-ci
+     type: jenkinsJob
+     integration: "jenkins"
+     pointer:
+       sourceName: "firstjob"
