@@ -1,6 +1,6 @@
 jobs:
-  - name: nginx-manifest-4
+  - name: nginx-manifest-4_test
     type: manifest
     steps:
-      - IN: nginx-image-4
-      - IN: sample-pipeline
+      - IN: nginx-image-4_test
+      - IN: sample-pipeline_test
