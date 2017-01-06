@@ -1,5 +1,5 @@
 resources:
-  - name: nginx-image-4
+  - name: nginx-image-4_test
     type: image
     integration: "dockerhub"
     pointer:
@@ -7,7 +7,7 @@ resources:
     seed:
       versionName: latest
       
-  - name: sample-pipeline
+  - name: sample-pipeline_test
     type: gitRepo
     integration: github
     pointer:
