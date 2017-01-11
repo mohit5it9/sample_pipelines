@@ -3,4 +3,4 @@ jobs:
     type: manifest
     steps:
       - IN: nginx-image-4
-      - IN: trigger-4
+      - OUT: trigger-4
