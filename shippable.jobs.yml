@@ -4,4 +4,4 @@ jobs:
     steps:
       - IN: nginx-image-4
       #- IN: trigger-4
-      - IN: sample_c_ciJob
+      #- IN: sample_c_ciJob
