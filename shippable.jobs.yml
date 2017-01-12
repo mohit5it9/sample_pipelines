@@ -121,7 +121,7 @@ jobs:
     on_start:
       - NOTIFY: slackNotification
     on_success:
-      - NOTIFY: myEmail
+      #- NOTIFY: myEmail
     on_failure:
       - NOTIFY: slackNotification
     steps:
