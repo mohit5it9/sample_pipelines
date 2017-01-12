@@ -4,11 +4,11 @@ jobs:
     steps:
       - IN: nginx-image-4
       - IN: trigger-4
-      - IN: sample_c_ciJob
+      #- IN: sample_c_ciJob
       - IN: sample_nodejs_ciJob
   - name: m1-manifest-test
     type: manifest
     steps:
-      - IN: sample_c_ciJob
+      #- IN: sample_c_ciJob
       - IN: sample_nodejs_ciJob
     
