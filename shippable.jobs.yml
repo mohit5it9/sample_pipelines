@@ -3,9 +3,17 @@ jobs:
     type: manifest
     on_success:
       - script: echo 'this is a success'
+      - NOTIFY: slackNotification
+      - NOTIFY: hipchat
+      - NOTIFY: irc
+    on_start:
+      - NOTIFY: slackNotification
+      - NOTIFY: hipchat
+      - NOTIFY: irc
     steps:
       - IN: box-nginx
       - IN: trigger-dv-man
+
 
   - name: mohit-2
     type: manifest
@@ -115,19 +123,19 @@ jobs:
   #     #- IN: mohit-2
   #     - IN: scale
 
-  - name: ddc-deploy-boxsn
-    type: deploy
-    on_start:
-      - NOTIFY: slackNotification
-    on_success:
+  #- name: ddc-deploy-boxsn
+  #  type: deploy
+  #  on_start:
+  #    - NOTIFY: slackNotification
+  #  on_success:
       #- NOTIFY: myEmail
-    on_failure:
-      - NOTIFY: slackNotification
-    steps:
-      - IN: ddc-cluster
+  #  on_failure:
+  #    - NOTIFY: slackNotification
+  #  steps:
+  #    - IN: ddc-cluster
       #- IN: mohit-1
-      - IN: mohit-2
-      - IN: scale
+  #    - IN: mohit-2
+      #- IN: scale
 
   # - name: dcl-deploy
   #   type: deploy
