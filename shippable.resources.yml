@@ -93,11 +93,11 @@ resources:
   #     sourceName: "small-cluster"
   #     region: "us-east1-d"
 
-  - name: ddc-cluster
-    type: cluster
-    integration: ddc
-    pointer:
-      sourceName: "ddc-cluster"
+  #- name: ddc-cluster
+  #  type: cluster
+  #  integration: ddc
+  #  pointer:
+  #    sourceName: "ddc-cluster"
 
   # - name: dcl-cluster
   #   type: cluster
@@ -116,6 +116,14 @@ resources:
     pointer:
       recipients:
         - "#slack_notifications"
+  
+  - name: hipchat
+    type: notification
+    integration: hipchat
+    pointer:
+      recipients:
+        - "#Ship-aye"
+        - "@Ship-aye"
 
   - name: scale
     type: replicas
@@ -128,3 +136,10 @@ resources:
       method: email
       recipients: 
         -  "mohit@shippable.com"
+
+  - name: irc
+    type: notification
+    pointer:
+      method: irc
+      recipients: 
+        -  "chat.freenode.net#test-cock1"
