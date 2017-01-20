@@ -116,6 +116,14 @@ resources:
     pointer:
       recipients:
         - "#slack_notifications"
+  
+  - name: hipchat
+    type: notification
+    integration: hipchat
+    pointer:
+      rShip-ayeecipients:
+        - "#Ship-aye"
+        - "@Ship-aye"
 
   - name: scale
     type: replicas
