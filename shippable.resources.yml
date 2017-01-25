@@ -123,7 +123,7 @@ resources:
     pointer:
       recipients:
         - "#Ship-aye"
-        - "@Ship-aye"
+
 
   - name: scale
     type: replicas
