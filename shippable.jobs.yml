@@ -1,5 +1,5 @@
 jobs:
-  - name: nginx-manifest-4
+  - name: nginx-test
     type: manifest
     steps:
       - IN: nginx-image-4
