@@ -1,5 +1,5 @@
 jobs:
-  - name: mohit-1
+  - name: mohit.1
     type: manifest
     on_success:
       - script: echo 'this is a success'
