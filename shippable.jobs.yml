@@ -54,6 +54,7 @@ jobs:
     steps:
       - IN: mohit-2
       - IN: tri-aws
+      - IN: scale
       #- IN: box-opts
       - TASK: managed
         deployMethod: blueGreen
