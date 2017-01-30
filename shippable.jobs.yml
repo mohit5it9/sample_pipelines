@@ -52,7 +52,7 @@ jobs:
     on_success:
       - NOTIFY: slackNotification
     steps:
-      - IN: mohit-1
+      - IN: mohit-2
       - IN: tri-aws
       #- IN: box-opts
       - TASK: managed
