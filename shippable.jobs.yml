@@ -56,7 +56,7 @@ jobs:
       - IN: tri-aws
       #- IN: box-opts
       - TASK: managed
-        deployMethod: upgrade
+        deployMethod: blueGreen
 
   #- name: tri-deploy-1
   #  type: deploy
