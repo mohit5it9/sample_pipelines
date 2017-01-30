@@ -3,7 +3,7 @@ resources:
     type: image
     integration: dockerhub
     pointer:
-      sourceName: library/hello-world
+      sourceName: library/busybox
       isPull: false
     seed:
       versionName: latest
