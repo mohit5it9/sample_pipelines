@@ -117,13 +117,13 @@ resources:
       recipients:
         - "#slack_notifications"
   
-  #- name: hipchat
-  #  type: notification
-  #  integration: hipchat
-  # pointer:
-  #    recipients:
-  #      - "#Ship-aye"
-  #      - "@Ship-aye"
+  - name: hipchat
+    type: notification
+    integration: hipchat
+   pointer:
+      recipients:
+        - "#Ship-aye"
+        - "@Ship-aye"
 
   - name: scale
     type: replicas
@@ -137,9 +137,9 @@ resources:
       recipients: 
         -  "mohit@shippable.com"
 
-  #- name: irc
-  #  type: notification
-  #  pointer:
-  #    method: irc
-  #    recipients: 
-  #      -  "chat.freenode.net#test-cock1"
+  - name: irc
+    type: notification
+    pointer:
+      method: irc
+      recipients: 
+        -  "chat.freenode.net#test-cock1"
