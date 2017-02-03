@@ -4,7 +4,7 @@ jobs:
     on_success:
       - script: echo 'this is a success'
       - NOTIFY: slackNotification
-      - NOTIFY: email
+      - NOTIFY: myMail
       #- NOTIFY: hipchat
       #- NOTIFY: irc
     on_start:
