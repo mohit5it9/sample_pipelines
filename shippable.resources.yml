@@ -12,7 +12,7 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: mohit5it9/sample_pipelines
+      sourceName: mohit5it9/sample_c
       branch: "master"
 
 
