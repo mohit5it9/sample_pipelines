@@ -18,6 +18,7 @@ jobs:
     type: runCI
     steps:
       - IN: sample-pipeline_test
+      - OUT: box-sn
 
 
   - name: mohit-2
