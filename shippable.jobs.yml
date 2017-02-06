@@ -14,6 +14,10 @@ jobs:
     steps:
       - IN: box-nginx
       - IN: trigger-dv-man
+  - name: runCITestJob
+    type: runCI
+    steps:
+      - IN: sample-pipeline_test
 
 
   - name: mohit-2
