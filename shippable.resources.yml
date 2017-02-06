@@ -7,6 +7,13 @@ resources:
       isPull: false
     seed:
       versionName: latest
+      
+  - name: sample-pipeline_test
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: mohit5it9/sample_pipelines
+      branch: "master"
 
 
 #  - name: box-nginx
