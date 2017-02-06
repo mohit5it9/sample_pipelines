@@ -120,7 +120,7 @@ resources:
   - name: hipchat
     type: notification
     integration: hipchat
-   pointer:
+    pointer:
       recipients:
         - "#Ship-aye"
         - "@Ship-aye"
