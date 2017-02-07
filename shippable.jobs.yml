@@ -22,6 +22,12 @@ jobs:
       - IN: box-sn
       - IN: trigger-dv-man
 
+  - name: runCIjob
+    type: runCI
+    steps:
+      - IN: sample-pipeline_test
+  
+
   # - name: ecs-deploy-mohit
   #   type: deploy
   #   on_start:
