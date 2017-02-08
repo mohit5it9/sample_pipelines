@@ -21,7 +21,7 @@ jobs:
       - IN: box-sn
       - IN: trigger-dv-man
 
-  - name:proxyrunCI
+  - name: proxyrunCI
     type: runCI
     steps:
       - IN: box-sn
