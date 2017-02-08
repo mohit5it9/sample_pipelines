@@ -28,12 +28,12 @@ jobs:
       #- OUT: sample-pipeline_test
       #- OUT: box-sn
 
-  - name: sample_php_runCI
-    type: runCI
-    steps:
+  #- name: sample_php_runCI
+  #  type: runCI
+  #  steps:
       #- IN: sample_php_ciRepo
       #- OUT: sample-pipeline_test
-      - IN: box-sn
+  #    - IN: box-sn
   
 
   # - name: ecs-deploy-mohit
