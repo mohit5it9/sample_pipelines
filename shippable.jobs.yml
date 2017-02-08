@@ -21,10 +21,10 @@ jobs:
       - IN: box-sn
       - IN: trigger-dv-man
 
-  - name: newProxyrunCI
-    type: runCI
-    steps:
-      - OUT: box-sn
+  #- name: newProxyrunCI
+  #  type: runCI
+  #  steps:
+  #    - OUT: box-sn
       #- OUT: sample-pipeline_test
       #- OUT: box-sn
 
