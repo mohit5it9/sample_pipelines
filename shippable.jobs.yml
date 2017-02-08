@@ -24,8 +24,8 @@ jobs:
   - name: proxyrunCI
     type: runCI
     steps:
-      - IN: box-sn
-      - OUT: sample-pipeline_test
+      - OUT: box-sn
+      #- OUT: sample-pipeline_test
       #- OUT: box-sn
   
 
