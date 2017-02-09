@@ -32,7 +32,7 @@ jobs:
     type: runCI
     steps:
       #- IN: sample_php_ciRepo
-      #- OUT: sample-pipeline_test
+      - IN: sample-pipeline_test
       - IN: box-sn
   
 
