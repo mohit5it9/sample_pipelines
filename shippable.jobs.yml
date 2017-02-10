@@ -33,7 +33,7 @@ jobs:
     steps:
       #- IN: sample_php_ciRepo
       #- IN: sample-pipeline_test
-      - IN: box-sn
+      #- IN: box-sn
       #- OUT: box-nginx
   
 
