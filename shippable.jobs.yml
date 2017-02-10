@@ -34,7 +34,7 @@ jobs:
       #- IN: sample_php_ciRepo
       #- IN: sample-pipeline_test
       - IN: box-sn
-      - OUT: box-nginx
+      #- OUT: box-nginx
   
 
   # - name: ecs-deploy-mohit
