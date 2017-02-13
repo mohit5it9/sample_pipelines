@@ -31,7 +31,7 @@ jobs:
   - name: sample_node_runCI
     type: runCI
     steps:
-      - OUT: box-sn
+      #- OUT: box-sn
       #- OUT: sample-pipeline_test
       - OUT: box-sn
 
