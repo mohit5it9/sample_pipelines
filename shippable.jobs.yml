@@ -28,7 +28,7 @@ jobs:
       - IN: trigger-dv-man
 
 
-  - name: newProxyrunCI
+  - name: sample_node
     type: runCI
     steps:
       - OUT: box-sn
