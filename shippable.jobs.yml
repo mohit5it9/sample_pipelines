@@ -26,23 +26,6 @@ jobs:
     steps:
       - IN: box-sn
       - IN: trigger-dv-man
-
-
-  - name: sample_pipelines_runCI
-    type: runCI
-    steps:
-      #- OUT: box-sn
-      #- OUT: sample-pipeline_test
-      - OUT: box-sn
-
-
-  - name: sample_php_runCI
-    type: runCI
-    steps:
-      #- IN: sample_php_ciRepo
-      #- IN: sample-pipeline_test
-      - IN: box-sn
-      #- OUT: box-nginx
   
 
   # - name: ecs-deploy-mohit
