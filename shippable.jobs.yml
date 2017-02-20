@@ -25,8 +25,7 @@ jobs:
     type: runCI
     steps:
       - IN: box-sn
-      - IN: trigger-dv-man
- 
+      - IN: trigger-dv-man 
 
   # - name: ecs-deploy-mohit
   #   type: deploy
