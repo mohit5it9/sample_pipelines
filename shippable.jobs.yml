@@ -131,8 +131,8 @@ jobs:
 
   - name: ddc-deploy-boxsn
     type: deploy
-    on_start:
-      - NOTIFY: slackNotification
+    #on_start:
+      #- NOTIFY: slackNotification
     #on_success:
       #- NOTIFY: myEmail
     #on_failure:
