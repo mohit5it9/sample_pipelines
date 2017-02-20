@@ -21,8 +21,8 @@ jobs:
       - IN: box-sn
       - IN: trigger-dv-man
 
-  - name: mohit-3
-    type: manifest
+  - name: sample_php_runCI
+    type: runCI
     steps:
       - IN: box-sn
       - IN: trigger-dv-man
