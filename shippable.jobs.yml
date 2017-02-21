@@ -20,7 +20,6 @@ jobs:
     steps:
       - IN: box-sn
       - IN: trigger-dv-man
-      - IN: sample-pipeline_test
 
   - name: sample_php_runCI
     type: runCI
