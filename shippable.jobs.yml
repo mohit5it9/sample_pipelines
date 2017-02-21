@@ -136,6 +136,7 @@ jobs:
       #- NOTIFY: myEmail
     #on_failure:
       #- NOTIFY: slackNotification
+    switch: off
     steps:
       - IN: ddc-cluster
       #- IN: mohit-1
