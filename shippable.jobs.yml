@@ -3,4 +3,6 @@ jobs:
     type: manifest
     steps:
       - IN: nginx-image-4_test
-      - IN: sample-pipeline_test
+      #- IN: sample-pipeline_test
+      flags:
+        - testFlag
