@@ -26,6 +26,7 @@ jobs:
     steps:
       - OUT: box-sn
       - IN: trigger-dv-man
+      - IN: sample-pipeline_test
 
   # - name: ecs-deploy-mohit
   #   type: deploy
