@@ -27,6 +27,7 @@ jobs:
     steps:
       - OUT: box-sn
       - IN: trigger-dv-man
+      - IN: mohit-1
 
   # - name: ecs-deploy-mohit
   #   type: deploy
