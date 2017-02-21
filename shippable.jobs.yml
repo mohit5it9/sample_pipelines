@@ -140,7 +140,7 @@ jobs:
       - IN: ddc-cluster
       #- IN: mohit-1
       - IN: mohit-2
-      switch: off
+        switch: off
       #- IN: scale
 
   # - name: dcl-deploy
