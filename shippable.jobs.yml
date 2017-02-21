@@ -30,7 +30,6 @@ jobs:
       - IN: mohit-1
     flags:
       - runCIJobNew
-      - extra
 
   # - name: ecs-deploy-mohit
   #   type: deploy
