@@ -7,9 +7,9 @@ resources:
     seed:
       versionName: latest
       
-  - name: sample-pipeline_test
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: mohit5it9/sample_pipelines
-      branch: "test/pm7117"
+  #- name: sample-pipeline_test
+  #  type: gitRepo
+  #  integration: github
+  #  pointer:
+  #    sourceName: mohit5it9/sample_pipelines
+  #    branch: "test/pm7117"
