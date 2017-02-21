@@ -29,7 +29,7 @@ jobs:
       - IN: trigger-dv-man
       - IN: mohit-1
     flags:
-      - runCIJobs
+      - runCIJobNew
 
   # - name: ecs-deploy-mohit
   #   type: deploy
