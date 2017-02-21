@@ -1,5 +1,5 @@
 jobs:
-  - name: sample_nginx_!job
+  - name: sample_nginx_job
     type: manifest
     steps:
       - IN: nginx-image-4_test
