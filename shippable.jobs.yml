@@ -26,12 +26,6 @@ jobs:
     steps:
       - OUT: box-sn
 
-
-  - name: runCIJob
-    type: runCI
-    steps:
-      - OUT: trigger-dv-man
-
   # - name: ecs-deploy-mohit
   #   type: deploy
   #   on_start:
