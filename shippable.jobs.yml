@@ -28,6 +28,8 @@ jobs:
       - OUT: box-sn
       - IN: trigger-dv-man
       - IN: mohit-1
+    flags:
+      - runCIJobs
 
   # - name: ecs-deploy-mohit
   #   type: deploy
