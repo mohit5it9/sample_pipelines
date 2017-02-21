@@ -26,8 +26,6 @@ jobs:
     type: runCI
     steps:
       - OUT: box-sn
-      - IN: trigger-dv-man
-      - IN: mohit-1
     flags:
       - runCIJobNew
 
