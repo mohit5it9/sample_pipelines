@@ -8,12 +8,12 @@ resources:
     seed:
       versionName: stable
       
-  - name: sample-pipeline_test
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: mohit5it9/sample_node
-      branch: "master"
+  #- name: sample-pipeline_test
+  #  type: gitRepo
+  #  integration: github
+  #  pointer:
+  #    sourceName: mohit5it9/sample_node
+  #    branch: "master"
 
 
 #  - name: box-nginx
