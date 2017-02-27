@@ -72,12 +72,12 @@ resources:
   #  pointer:
   #    region: "us-east-3"
   
-  - name: tri-aws
-    type: cluster
-    integration: aws
-    pointer:
-      sourceName: "testCL"
-      region: "us-west-2"
+  #- name: tri-aws
+  #  type: cluster
+  #  integration: aws
+  #  pointer:
+  #    sourceName: "testCL"
+  #    region: "us-west-2"
 
   # - name: ecs-cluster
   #   type: cluster
@@ -110,12 +110,12 @@ resources:
   #   integration: jatin-dcl
   #   pointer:
   #     sourceName: "cluster-dcl"
-  - name: slackNotification
-    type: notification
-    integration: slack
-    pointer:
-      recipients:
-        - "#slack_notifications"
+  #- name: slackNotification
+  #  type: notification
+  #  integration: slack
+  #  pointer:
+  #    recipients:
+  #      - "#slack_notifications"
   
   #- name: hipchat
   #  type: notification
@@ -125,17 +125,17 @@ resources:
   #      - "#Ship-aye"
 
 
-  - name: scale
-    type: replicas
-    version:
-      count: 2
+  #- name: scale
+  #  type: replicas
+  #  version:
+  #    count: 2
 
-  - name: myEmail
-    type: notification
-    pointer:
-      method: email
-      recipients: 
-        -  "mohit@shippable.com"
+  #- name: myEmail
+  #  type: notification
+  #  pointer:
+  #    method: email
+  #    recipients: 
+  #      -  "mohit@shippable.com"
 
   #- name: irc
   #  type: notification
