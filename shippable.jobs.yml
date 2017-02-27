@@ -45,19 +45,19 @@ jobs:
   #     - TASK: managed
   #       deployMethod: blueGreen
 
-  - name: aws-deploy-1
-    type: deploy
-    on_start:
-      - NOTIFY: slackNotification
-    on_success:
-      - NOTIFY: slackNotification
-    steps:
-      - IN: mohit-2
-      - IN: tri-aws
-      - IN: scale
+  #- name: aws-deploy-1
+  #  type: deploy
+  #  on_start:
+  #    - NOTIFY: slackNotification
+  #  on_success:
+  #    - NOTIFY: slackNotification
+  #  steps:
+  #    - IN: mohit-2
+  #    - IN: tri-aws
+  #    - IN: scale
       #- IN: box-opts
-      - TASK: managed
-        deployMethod: blueGreen
+  #    - TASK: managed
+  #      deployMethod: blueGreen
 
   #- name: tri-deploy-1
   #  type: deploy
