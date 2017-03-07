@@ -105,6 +105,11 @@ resources:
     integration: ddc
     pointer:
       sourceName: "ddc-cluster"
+  - name: params
+    type: params
+    version:
+      params:
+        secure: secure: YsFi4NYhZ2mRISFBw327TZr89bXfxQc9qiC4HwvXgmF5C+IoAyp6Ea6a3IaUTuDUd9ZLsm18L/i/duTxjrAiPrIWMdcYEWUCyCHlVQSvf+e6a9P4s2UKrc9orJHaNlo6jW58zIOzvllum0OEbl3C2zpautmFJ4U+IZSwQ9j05ZFUV+6mR426ilRH+ePQbtmCtpZ5psgud1fgejpnqXo8mouUg8pGHpZZq6BNp5aVFN0oFrzqyxxnrh26aXw4J2fohmQP/eDvexvHAnzTuSLIiG0BJJzkIu26rfJXNrRBlWL9mR85AAeLjK2SM6NIZy4SOgu+tQiFQRCXLmpWYrN//A==
 
   # - name: dcl-cluster
   #   type: cluster
