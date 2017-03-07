@@ -21,6 +21,7 @@ jobs:
       - IN: box-sn
       - IN: params
       - IN: trigger-dv-man
+      - IN: params2
 
   - name: sample_php_runCI
     type: runCI
