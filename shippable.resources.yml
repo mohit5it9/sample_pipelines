@@ -105,18 +105,6 @@ resources:
     integration: ddc
     pointer:
       sourceName: "ddc-cluster"
-  - name: params
-    type: params
-    version:
-      params:
-        secure: o3VuH8jfYwlX14ABldLO+3tq8twtBsKNqlzwmI53Vu65o6xRODrDK1sda0N/KoAo06kZ9HU6UfWiZJGKGFVJfj1yXLmXMTvhI3C44jf8LLeT4ajOVDgw+9oL1ICq20QMTJGSW08M4DGvAy/w03brPzVKf0I69XrV7YXNpGIJvKzqO+voxNyiorcTFfp0X9b6E7Dd5i9rt8NQXkSGmA50WVLS3OTBhNw+X1u7fud1sqM/himpxIemlj6puJ+DhwT/emxlJjZlh741xod7nFFGJpOKTuWsk9Zt7CGqNchWQLVyqXAy2Xu9mgZnwuAvbUIRFTI/u3TkAhAzieoabom5XQ==
-
-  - name: params2
-    type: params
-    version:
-      params:
-        secure: eICPQLRJXYeNPGGljJMczq94dGksmrW1ADMxpCuqSwSSXt8XVitrAy82jerZvitGA0SQP4Q2PuS6b7zNS8WCn3bWz7/PUpVUwfMK/MLPtXO1PgQnBL9EdLO5m2lGEL1rBG6DfNIaXBuDEF85VPSmc6CMv4Mj+9YV107BbmrUi22nZoEKMPrxeJ93czauG64tNs8pIDqnJMY0Hc0UmWADVh7iBd7UCWH1c6jYXdeezc0XcLJaRiejqd6um7wq8+z5rgSjye8FnMlUc2fMFnfK357mK3q7ijYCMyasACWn60DnvRIViphcQJQ/EVhAmxMv6xXQ7shL8PBZxhr8ojavFA==
-
   # - name: dcl-cluster
   #   type: cluster
   #   integration: dcl
