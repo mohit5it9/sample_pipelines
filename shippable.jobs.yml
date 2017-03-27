@@ -12,11 +12,11 @@ jobs:
       #- NOTIFY: irc
     steps:
       - IN: box-nginx
+      - IN: box-sn
 
   - name: mohit-2
     type: manifest
     steps:
-      - IN: box-sn
       - IN: box-nginx
   
   - name: sample_node_runCI
