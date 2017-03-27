@@ -20,6 +20,7 @@ jobs:
     type: manifest
     steps:
       - IN: box-sn
+      - IN: box-nginx
   
   - name: sample_php_runCI
     type: runCI
