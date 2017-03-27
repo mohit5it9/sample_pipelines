@@ -116,17 +116,17 @@ jobs:
   #     - TASK: managed
   #       deployMethod: blueGreen
 
-  # - name: ddc-deploy-nginx
-  #   type: deploy
+   - name: ddc-deploy-nginx
+     type: deploy
   #   on_start:
   #     - NOTIFY: slackNotification
   #   on_success:
   #     - NOTIFY: myEmail
   #   on_failure:
   #     - NOTIFY: slackNotification
-  #   steps:
-  #     - IN: ddc-cluster
-  #     - IN: mohit-1
+     steps:
+       - IN: ddc-cluster
+       - IN: mohit-1
   #     #- IN: mohit-2
   #     - IN: scale
 
