@@ -26,6 +26,7 @@ jobs:
     type: runCI
     steps:
       - IN: box-sn
+      - IN: sample_php_ciRepo
     flags:
       - runCIJobNew
 
