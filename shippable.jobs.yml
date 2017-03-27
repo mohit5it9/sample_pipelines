@@ -13,7 +13,7 @@ jobs:
     steps:
       - IN: box-nginx
       - IN: trigger-dv-man
-      - IN: box-sn
+      - IN: sample_php_ciRepo
 
 
   - name: mohit-2
