@@ -22,7 +22,7 @@ jobs:
   - name: sample_node_runCI
     type: runCI
     steps:
-      - IN: box-sn
+      - IN: box-nginx
     flags:
       - runCIJobNew
 
