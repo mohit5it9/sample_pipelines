@@ -126,7 +126,7 @@ jobs:
   #     - NOTIFY: slackNotification
     steps:
       - IN: ddc-cluster
-      - IN: mohit-1
+      - IN: mohit-2
   #     #- IN: mohit-2
   #     - IN: scale
 
