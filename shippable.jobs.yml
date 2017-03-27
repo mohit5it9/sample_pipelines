@@ -13,6 +13,7 @@ jobs:
     steps:
       - IN: box-nginx
       - IN: box-sn
+      - IN: sample_node_ciRepo
 
   - name: mohit-2
     type: manifest
