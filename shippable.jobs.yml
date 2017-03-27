@@ -12,7 +12,6 @@ jobs:
       #- NOTIFY: irc
     steps:
       - IN: box-nginx
-      - IN: sample_node_ciRepo
       - IN: trigger-dv-man
 
   - name: mohit-2
