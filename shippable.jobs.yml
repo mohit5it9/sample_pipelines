@@ -21,12 +21,12 @@ jobs:
       - IN: box-sn
       - IN: trigger-dv-man
       - IN: box-nginx
+      - IN: sample_php_ciRepo
   
   - name: sample_php_runCI
     type: runCI
     steps:
       - IN: box-sn
-      - IN: sample_php_ciRepo
     flags:
       - runCIJobNew
 
