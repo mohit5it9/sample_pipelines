@@ -21,11 +21,11 @@ jobs:
       - IN: box-sn
       - IN: box-nginx
   
-  - name: sample_php_runCI
+  - name: sample_node_runCI
     type: runCI
     steps:
       - IN: box-sn
-      - IN: sample_php_ciRepo
+      - IN: sample_node_ciRepo
     flags:
       - runCIJobNew
 
