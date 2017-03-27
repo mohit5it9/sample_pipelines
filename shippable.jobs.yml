@@ -24,7 +24,6 @@ jobs:
     type: runCI
     steps:
       - IN: box-sn
-      - IN: sample_node_ciRepo
     flags:
       - runCIJobNew
 
