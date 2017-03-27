@@ -18,7 +18,6 @@ jobs:
     type: manifest
     steps:
       - IN: box-nginx
-      - IN: sample_node_ciRepo
   
   - name: sample_node_runCI
     type: runCI
