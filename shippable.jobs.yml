@@ -23,7 +23,6 @@ jobs:
     type: runCI
     steps:
       - IN: box-nginx
-      - OUT: sample_node_ciRepo
     flags:
       - runCIJobNew
 
