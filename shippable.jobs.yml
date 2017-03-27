@@ -13,7 +13,6 @@ jobs:
     steps:
       - IN: box-nginx
       - IN: box-sn
-      - OUT: sample_node_ciRepo
 
   - name: mohit-2
     type: manifest
@@ -24,6 +23,7 @@ jobs:
     type: runCI
     steps:
       - IN: box-nginx
+      - OUT: sample_node_ciRepo
     flags:
       - runCIJobNew
 
