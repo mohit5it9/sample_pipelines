@@ -26,6 +26,7 @@ jobs:
     steps:
       - IN: box-sn
       - IN: sample_php_ciRepo
+      - IN: box-nginx
     flags:
       - runCIJobNew
 
