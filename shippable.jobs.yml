@@ -24,8 +24,6 @@ jobs:
     type: runCI
     steps:
       - IN: box-sn
-      - IN: mohit-1
-      - IN: mohit-2
     flags:
       - runCIJobNew
 
