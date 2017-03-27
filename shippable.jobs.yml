@@ -20,6 +20,7 @@ jobs:
     steps:
       - IN: box-sn
       - IN: trigger-dv-man
+      - IN: sample_php_ciRepo
   
   - name: sample_php_runCI
     type: runCI
