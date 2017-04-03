@@ -117,13 +117,12 @@ resources:
   #    recipients:
   #      - "#slack_notifications"
   
-  #- name: hipchat
-  #  type: notification
-  #  integration: hipchat
-  #  pointer:
-  #    recipients:
-  #      - "#Ship-aye"
-
+  - name: hipchat
+    type: notification
+    integration: hipchat
+    pointer:
+      recipients:
+        - "#Ship-aye"
 
   #- name: scale
   #  type: replicas
