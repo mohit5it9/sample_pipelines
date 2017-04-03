@@ -4,11 +4,11 @@ jobs:
     on_success:
       - script: echo 'this is a success'
       #- NOTIFY: slackNotification
-      #- NOTIFY: hipchat
+      - NOTIFY: hipchat
       #- NOTIFY: irc
     on_start:
       #- NOTIFY: slackNotification
-      #- NOTIFY: hipchat
+      - NOTIFY: hipchat
       #- NOTIFY: irc
     steps:
       - IN: box-nginx
