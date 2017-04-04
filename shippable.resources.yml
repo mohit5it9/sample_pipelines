@@ -129,12 +129,12 @@ resources:
   #  version:
   #    count: 2
 
-  #- name: myEmail
-  #  type: notification
-  #  pointer:
-  #    method: email
-  #    recipients: 
-  #      -  "mohit@shippable.com"
+  - name: myEmail
+    type: notification
+    pointer:
+      method: email
+      recipients: 
+        -  "mohit@shippable.com"
 
   - name: irc
     type: notification
