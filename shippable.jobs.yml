@@ -19,6 +19,10 @@ jobs:
     steps:
       - IN: box-sn
       - IN: box-nginx
+    on_start:
+      - NOTIFY: myEmail
+    on_success:
+      - NOTIFY: myEmail
   
   - name: sample_php_runCI
     type: runCI
