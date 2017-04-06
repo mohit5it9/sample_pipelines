@@ -32,7 +32,7 @@ jobs:
     on_start:
       - NOTIFY: myEmail
     on_success:
-      - NOTIFY: myEmail
+      - NOTIFY: irc
   
   - name: sample_php_runCI
     type: runCI
