@@ -10,9 +10,9 @@ jobs:
       - NOTIFY: myEmail
       - NOTIFY: hipchat
       - NOTIFY: irc
-    always:
-      - NOTIFY: hipchat
-      - NOTIFY: irc
+    #always:
+    #  - NOTIFY: hipchat
+    #  - NOTIFY: irc
     steps:
       - IN: box-nginx
       - IN: trigger-dv-man
