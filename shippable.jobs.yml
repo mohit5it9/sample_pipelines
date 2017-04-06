@@ -6,14 +6,17 @@ jobs:
       - NOTIFY: myEmail
       - NOTIFY: hipchat
       - NOTIFY: irc
+      - NOTIFY: slack
     on_start:
       - NOTIFY: myEmail
       - NOTIFY: hipchat
       - NOTIFY: irc
+      - NOTIFY: slack
     on_failure:
       - NOTIFY: myEmail
       - NOTIFY: hipchat
       - NOTIFY: irc
+      - NOTIFY: slack
     #always:
     #  - NOTIFY: hipchat
     #  - NOTIFY: irc
