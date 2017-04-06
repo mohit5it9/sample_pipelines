@@ -133,12 +133,22 @@ jobs:
 
   - name: ddc-deploy-nginx
     type: deploy
-  #   on_start:
-  #     - NOTIFY: slackNotification
-  #   on_success:
-  #     - NOTIFY: myEmail
-  #   on_failure:
-  #     - NOTIFY: slackNotification
+    on_success:
+      - script: echo 'this is a success'
+      - NOTIFY: myEmail
+      - NOTIFY: hipchat
+      - NOTIFY: irc
+      - NOTIFY: slackNotification
+    on_start:
+      - NOTIFY: myEmail
+      - NOTIFY: hipchat
+      - NOTIFY: irc
+      - NOTIFY: slackNotification
+    on_failure:
+      - NOTIFY: myEmail
+      - NOTIFY: hipchat
+      - NOTIFY: irc
+      - NOTIFY: slackNotification
     steps:
       - IN: ddc-cluster
       - IN: mohit-2
