@@ -141,4 +141,4 @@ resources:
     pointer:
       method: irc
       recipients: 
-        -  "chat.freenode.net#test-rc"
+        -  "chat.freenode.net#test-alpha"
