@@ -10,6 +10,10 @@ jobs:
       - NOTIFY: myEmail
       - NOTIFY: hipchat
       - NOTIFY: irc
+    on_failure:
+      - NOTIFY: myEmail
+      - NOTIFY: hipchat
+      - NOTIFY: irc
     #always:
     #  - NOTIFY: hipchat
     #  - NOTIFY: irc
