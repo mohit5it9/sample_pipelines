@@ -1,15 +1,15 @@
 jobs:
   - name: mohit-1
     type: manifest
-    #on_success:
-    #  - script: echo 'this is a success'
-    #  - NOTIFY: myEmail
-    #  - NOTIFY: hipchat
-    #  - NOTIFY: irc
-    #on_start:
-    #  - NOTIFY: myEmail
-    #  - NOTIFY: hipchat
-    #  - NOTIFY: irc
+    on_success:
+      - script: echo 'this is a success'
+      - NOTIFY: myEmail
+      - NOTIFY: hipchat
+      - NOTIFY: irc
+    on_start:
+      - NOTIFY: myEmail
+      - NOTIFY: hipchat
+      - NOTIFY: irc
     always:
       - NOTIFY: hipchat
       - NOTIFY: irc
