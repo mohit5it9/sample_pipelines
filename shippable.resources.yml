@@ -141,4 +141,4 @@ resources:
     pointer:
       method: irc
       recipients: 
-        -  "webchat.irchighway.net#test-alpha"
+        -  "webchat.irchighway.net#test-rc"
