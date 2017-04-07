@@ -140,4 +140,5 @@ resources:
     type: notification
     pointer:
       method: irc
-      recipients: "webchat.irchighway.net#test-rc"
+      recipients:
+        - "webchat.irchighway.net#test-rc"
