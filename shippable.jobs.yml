@@ -5,17 +5,17 @@ jobs:
       - script: echo 'this is a success'
       - NOTIFY: myEmail
       - NOTIFY: hipchat
-      #- NOTIFY: irc
+      - NOTIFY: irc
       - NOTIFY: slackNotification
     on_start:
       - NOTIFY: myEmail
       - NOTIFY: hipchat
-      #- NOTIFY: irc
+      - NOTIFY: irc
       - NOTIFY: slackNotification
     on_failure:
       - NOTIFY: myEmail
       - NOTIFY: hipchat
-      #- NOTIFY: irc
+      - NOTIFY: irc
       - NOTIFY: slackNotification
     #always:
     #  - NOTIFY: hipchat
