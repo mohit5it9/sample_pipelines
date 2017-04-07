@@ -17,9 +17,10 @@ jobs:
       - NOTIFY: hipchat
       - NOTIFY: irc
       - NOTIFY: slackNotification
-    #always:
-    #  - NOTIFY: hipchat
-    #  - NOTIFY: irc
+    always:
+      - NOTIFY: hipchat
+      - NOTIFY: irc
+      - NOTIFY: slackNotification
     steps:
       - IN: box-nginx
       - IN: trigger-dv-man
