@@ -137,7 +137,7 @@ jobs:
       - script: echo 'this is a success'
       - NOTIFY: myEmail
       - NOTIFY: hipchat
-      #- NOTIFY: irc
+      - NOTIFY: irc
       - NOTIFY: slackNotification
     steps:
       - IN: ddc-cluster
