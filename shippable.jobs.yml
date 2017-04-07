@@ -133,7 +133,19 @@ jobs:
 
   - name: ddc-deploy-nginx
     type: deploy
-    always:
+    on_success:
+      - script: echo 'this is a success'
+      - NOTIFY: myEmail
+      - NOTIFY: hipchat
+      - NOTIFY: irc
+      - NOTIFY: slackNotification
+    on_start:
+      - script: echo 'this is a success'
+      - NOTIFY: myEmail
+      - NOTIFY: hipchat
+      - NOTIFY: irc
+      - NOTIFY: slackNotification
+    on_failure:
       - script: echo 'this is a success'
       - NOTIFY: myEmail
       - NOTIFY: hipchat
