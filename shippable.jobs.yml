@@ -7,7 +7,7 @@ jobs:
       #- NOTIFY: myEmail
       #- NOTIFY: hipchat
       #- NOTIFY: irc
-    on_start:
+    #on_start:
       #- NOTIFY: slackNotification
       #- NOTIFY: hipchat
       #- NOTIFY: irc
@@ -15,11 +15,11 @@ jobs:
       - IN: box-nginx
       - IN: trigger-dv-man
 
-  - name: mohit-2
-    type: manifest
-    steps:
-      - IN: box-sn
-      - IN: trigger-dv-man
+  #- name: mohit-2
+  #  type: manifest
+  #  steps:
+  #    - IN: box-sn
+  #    - IN: trigger-dv-man
 
   #- name: newProxyrunCI
   #  type: runCI
