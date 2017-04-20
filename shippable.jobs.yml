@@ -3,6 +3,6 @@ jobs:
     type: runCI
     steps:
       #- IN: abc
-      - IN: triggertest2
+      - IN: triggertest200
     flags:
       - runCIJob_newFlag123
