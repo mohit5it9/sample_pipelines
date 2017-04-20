@@ -1,8 +1,8 @@
 jobs:
-  #- name: sample_python_runCI
-  #  type: runCI
-  #  steps:
-  #    - IN: abc
-  #    - IN: triggertest200
-  #  flags:
-  #    - runCIJob_newFlag123
+  - name: sample_python_runCI
+    type: runCI
+    steps:
+      - IN: abc
+      - IN: triggertest200
+    flags:
+      - runCIJob_newFlag123
