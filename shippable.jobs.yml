@@ -21,7 +21,7 @@ jobs:
     #  - NOTIFY: hipchat
     #  - NOTIFY: irc
     steps:
-      - IN: box-nginx
+      - IN: box-nginx1
   #    - IN: trigger-dv-man
 
   - name: mohit-2
