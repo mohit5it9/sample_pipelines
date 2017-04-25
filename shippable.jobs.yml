@@ -33,6 +33,8 @@ jobs:
       - NOTIFY: myEmail
     on_success:
       - NOTIFY: irc
+    flags:
+      - manifestFlag
   
   # - name: ecs-deploy-mohit
   #   type: deploy
@@ -146,6 +148,8 @@ jobs:
       - IN: mohit-2
   #     #- IN: mohit-2
   #     - IN: scale
+    flags:
+      - deployFlag
 
   #- name: ddc-deploy-boxsn
   #  type: deploy
