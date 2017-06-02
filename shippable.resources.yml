@@ -51,10 +51,10 @@ resources:
         #- "basedataContainer"
         #- "basedataContainer:ro"
 
-  # - name: nightly-4
-  #   type: time
-  #   seed:
-  #     interval: "* 20 * * *"
+   - name: nightly-4
+     type: time
+     seed:
+       interval: "* 20 * * *"
 
   # - name: daily
   #   type: time
