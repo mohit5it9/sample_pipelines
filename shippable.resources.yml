@@ -8,7 +8,6 @@ resources:
     seed:
       versionName: latest
 
-
 #  - name: box-nginx
 #    type: image
 #    integration: dockerhub
