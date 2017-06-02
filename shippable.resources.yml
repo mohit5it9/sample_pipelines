@@ -124,10 +124,10 @@ resources:
       recipients:
         - "#Ship-aye"
 
-  #- name: scale
-  #  type: replicas
-  #  version:
-  #    count: 2
+  - name: scale
+    type: replicas
+    version:
+      count: 2
 
   - name: myEmail
     type: notification
