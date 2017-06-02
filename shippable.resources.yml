@@ -8,14 +8,14 @@ resources:
     seed:
       versionName: latest
 
-#  - name: box-nginx
-#    type: image
-#    integration: dockerhub
-#    pointer:
-#      sourceName: mohit5it9/nginx
-#      isPull: true
-#    seed:
-#      versionName: v3
+  - name: box-nginx123
+    type: image
+    integration: dockerhub
+    pointer:
+      sourceName: mohit5it9/nginx
+      isPull: true
+    seed:
+      versionName: v3
 
   - name: box-nginx
     type: image
