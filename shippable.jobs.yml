@@ -148,8 +148,6 @@ jobs:
       - IN: mohit-2
   #     #- IN: mohit-2
   #     - IN: scale
-    flags:
-      - deployFlag
       
 
 
