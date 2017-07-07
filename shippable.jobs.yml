@@ -87,6 +87,7 @@ jobs:
     steps:
       - TASK:
         - script: echo "true"
+      - OUT: manifest-1
     on_success:
       - script: echo "successfully completed"
   
