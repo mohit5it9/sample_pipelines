@@ -80,6 +80,15 @@ jobs:
     type: manifest
     steps:
       - IN: mohit-10
+
+
+  - name: noDep
+    type: runSh
+    steps:
+      - TASK:
+        - script: echo "true"
+    on_success:
+      - script: echo "successfully completed"
   
   # - name: ecs-deploy-mohit
   #   type: deploy
