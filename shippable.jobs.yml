@@ -80,8 +80,7 @@ jobs:
     type: manifest
     steps:
       - IN: mohit-10
-      - OUT: noDep
-      - IN: trigger-1
+      - OUT: trigger-1
 
 
   - name: noDep
