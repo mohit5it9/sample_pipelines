@@ -80,6 +80,7 @@ jobs:
     type: manifest
     steps:
       - IN: mohit-10
+      - OUT: nightly-4
 
 
   - name: noDep
