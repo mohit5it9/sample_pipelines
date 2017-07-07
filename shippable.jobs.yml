@@ -87,7 +87,7 @@ jobs:
     steps:
       - TASK:
         - script: echo "true"
-      - OUT: manifest-1
+      - OUT: mohit-3
     on_success:
       - script: echo "successfully completed"
   
