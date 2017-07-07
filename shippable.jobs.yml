@@ -35,6 +35,51 @@ jobs:
       - NOTIFY: irc
     flags:
       - manifestFlag
+      
+  - name: mohit-3
+    type: manifest
+    steps:
+      - IN: mohit-2
+
+  - name: mohit-4
+    type: manifest
+    steps:
+      - IN: mohit-3
+
+  - name: mohit-5
+    type: manifest
+    steps:
+      - IN: mohit-4
+
+  - name: mohit-6
+    type: manifest
+    steps:
+      - IN: mohit-5
+
+  - name: mohit-7
+    type: manifest
+    steps:
+      - IN: mohit-6
+
+  - name: mohit-8
+    type: manifest
+    steps:
+      - IN: mohit-7
+
+  - name: mohit-9
+    type: manifest
+    steps:
+      - IN: mohit-8
+      
+  - name: mohit-10
+    type: manifest
+    steps:
+      - IN: mohit-9
+      
+  - name: mohit-11
+    type: manifest
+    steps:
+      - IN: mohit-10
   
   # - name: ecs-deploy-mohit
   #   type: deploy
@@ -145,7 +190,7 @@ jobs:
       - NOTIFY: slackNotification
     steps:
       - IN: ddc-cluster
-      - IN: mohit-2
+      - IN: mohit-11
   #     #- IN: mohit-2
   #     - IN: scale
     flags:
