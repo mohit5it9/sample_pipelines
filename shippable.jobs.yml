@@ -85,9 +85,9 @@ jobs:
   - name: noDep
     type: runSh
     steps:
+      - OUT: box-sn
       - TASK:
         - script: echo "true"
-      - OUT: mohit-3
     on_success:
       - script: echo "successfully completed"
   
