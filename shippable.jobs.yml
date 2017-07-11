@@ -29,6 +29,7 @@ jobs:
     steps:
       - IN: box-sn
       - IN: box-nginx
+      - IN: mohit-1
     on_start:
       - NOTIFY: myEmail
     on_success:
