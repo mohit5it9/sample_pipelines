@@ -34,8 +34,8 @@ jobs:
       - NOTIFY: myEmail
     on_success:
       - NOTIFY: irc
-    #flags:
-    #  - manifestFlag
+    flags:
+      - manifestFlag
   
   # - name: ecs-deploy-mohit
   #   type: deploy
