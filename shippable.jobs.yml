@@ -22,6 +22,7 @@ jobs:
     #  - NOTIFY: irc
     steps:
       - IN: box-nginx
+      - IN: dv-params
   #    - IN: trigger-dv-man
 
   - name: mohit-2
