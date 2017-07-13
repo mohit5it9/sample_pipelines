@@ -45,7 +45,7 @@ resources:
     type: params
     version:
       params:
-        MONGO_API_URL: "localhost:28017"
+        MANGO_API_URL: "localhost:28017"
 
 
   #- name: box-opts
