@@ -37,7 +37,7 @@ jobs:
       - NOTIFY: irc
     flags:
       - manifestFlag
-  
+ 
   # - name: ecs-deploy-mohit
   #   type: deploy
   #   on_start:
