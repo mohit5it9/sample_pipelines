@@ -37,6 +37,7 @@ jobs:
       - NOTIFY: irc
     flags:
       - manifestFlag
+      - deployFlag
   
   # - name: ecs-deploy-mohit
   #   type: deploy
@@ -127,31 +128,31 @@ jobs:
   #     - TASK: managed
   #       deployMethod: blueGreen
 
-  #- name: ddc-deploy-nginx
-  #  type: deploy
-  #  on_success:
-  #    - script: echo 'this is a success'
-  #    - NOTIFY: myEmail
-  #    - NOTIFY: hipchat
-  #    - NOTIFY: irc
-  #    - NOTIFY: slackNotification
-  #  on_start:
-  #    - NOTIFY: myEmail
-  #    - NOTIFY: hipchat
-  #    - NOTIFY: irc
-  #    - NOTIFY: slackNotification
-  #  on_failure:
-  #    - NOTIFY: myEmail
-  #    - NOTIFY: hipchat
-  #    - NOTIFY: irc
-  #    - NOTIFY: slackNotification
-  #  steps:
-  #    - IN: ddc-cluster
-  #    - IN: mohit-2
-  #     #- IN: mohit-2
-  #     - IN: scale
-  #  flags:
-  #    - deployFlag
+  - name: ddc-deploy-nginx
+    type: deploy
+    on_success:
+      - script: echo 'this is a success'
+      - NOTIFY: myEmail
+      - NOTIFY: hipchat
+      - NOTIFY: irc
+      - NOTIFY: slackNotification
+    on_start:
+      - NOTIFY: myEmail
+      - NOTIFY: hipchat
+      - NOTIFY: irc
+      - NOTIFY: slackNotification
+    on_failure:
+      - NOTIFY: myEmail
+      - NOTIFY: hipchat
+      - NOTIFY: irc
+      - NOTIFY: slackNotification
+    steps:
+      - IN: ddc-cluster
+      - IN: mohit-2
+       #- IN: mohit-2
+       #- IN: scale
+    flags:
+      - deployFlag
       
 
 
