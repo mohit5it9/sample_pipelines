@@ -1,6 +1,7 @@
 jobs:
   - name: mohit-1
     type: manifest
+    allowPublicAccess: true
     on_success:
       - script: echo 'this is a success!!!'
       #- NOTIFY: myEmail
