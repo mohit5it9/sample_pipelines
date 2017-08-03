@@ -1,7 +1,6 @@
 jobs:
   - name: mohit-1
     type: manifest
-    allowPublicAccess: true
     on_success:
       - script: echo 'this is a success!!!'
       #- NOTIFY: myEmail
@@ -129,8 +128,8 @@ jobs:
   #     - TASK: managed
   #       deployMethod: blueGreen
 
-  #- name: ddc-deploy-nginx
-  #  type: deploy
+  - name: ddc-deploy-nginx
+    type: deploy
   #  on_success:
   #    - script: echo 'this is a success'
   #    - NOTIFY: myEmail
@@ -147,13 +146,13 @@ jobs:
   #    - NOTIFY: hipchat
   #    - NOTIFY: irc
   #    - NOTIFY: slackNotification
-  #  steps:
-  #    - IN: ddc-cluster
-  #    - IN: mohit-2
+    steps:
+      - IN: ddc-cluster
+      - IN: mohit-2
        #- IN: mohit-2
        #- IN: scale
-  #  flags:
-  #    - deployFlag
+    flags:
+      - deployFlag
       
 
 
