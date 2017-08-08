@@ -30,6 +30,50 @@ resources:
     type: time
     seed:
       interval: "* 20 * * *"
+  - name: nightly-5
+    type: time
+    seed:
+      interval: "* 20 * * *"
+  - name: nightly-6
+    type: time
+    seed:
+      interval: "* 20 * * *"
+  - name: nightly-7
+    type: time
+    seed:
+      interval: "* 20 * * *"
+  - name: nightly-8
+    type: time
+    seed:
+      interval: "* 20 * * *"
+  - name: nightly-9
+    type: time
+    seed:
+      interval: "* 20 * * *"
+  - name: nightly-10
+    type: time
+    seed:
+      interval: "* 20 * * *"
+  - name: nightly-11
+    type: time
+    seed:
+      interval: "* 20 * * *"
+  - name: nightly-12
+    type: time
+    seed:
+      interval: "* 20 * * *"
+  - name: nightly-13
+    type: time
+    seed:
+      interval: "* 20 * * *"
+  - name: nightly-14
+    type: time
+    seed:
+      interval: "* 20 * * *"
+  - name: nightly-15
+    type: time
+    seed:
+      interval: "* 20 * * *"
 
   - name: daily
     type: time
