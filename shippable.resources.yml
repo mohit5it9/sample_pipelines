@@ -6,7 +6,7 @@ resources:
       sourceName: library/httpd
       isPull: false
     seed:
-      versionName: alpine3.3
+      versionName: alpine3.4
 
   - name: box-nginx123
     type: image
