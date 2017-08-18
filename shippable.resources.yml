@@ -3,7 +3,7 @@ resources:
     type: image
     integration: dockerhub
     pointer:
-      sourceName: library/httpd
+      sourceName: library/httpdssc
       isPull: false
     seed:
       versionName: latest
