@@ -1,5 +1,5 @@
 resources:
- - name: box-sn
+  - name: box-sn
    type: image
     integration: dockerhub
     pointer:
