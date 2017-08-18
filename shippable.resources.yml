@@ -1,12 +1,12 @@
 resources:
-  - name: box-sn
-    type: image
-    integration: dockerhub
-    pointer:
-      sourceName: library/httpd
-      isPull: false
-    seed:
-      versionName: latest
+ #- name: box-sn
+ #  type: image
+ #   integration: dockerhub
+ #   pointer:
+ #     sourceName: library/httpd
+ #     isPull: false
+ #   seed:
+ #     versionName: latest
 
   - name: box-nginx123
     type: image
