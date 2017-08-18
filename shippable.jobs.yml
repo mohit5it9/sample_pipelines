@@ -28,7 +28,7 @@ jobs:
   - name: mohit-2
     type: manifest
     steps:
-      - IN: box-sn-1
+      - IN: box-sn
       - IN: mohit-1
       - IN: dv-params
       - IN: nightly-4
