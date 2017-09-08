@@ -31,18 +31,7 @@ jobs:
       - IN: box-sn
       - IN: mohit-1
       - IN: dv-params
-      - IN: nightly-4
-      - IN: nightly-5
-      - IN: nightly-6
-      - IN: nightly-7
-      - IN: nightly-8
-      - IN: nightly-9
-      - IN: nightly-10
-      - IN: nightly-11
-      - IN: nightly-12
-      - IN: nightly-13
-      - IN: nightly-14
-      - IN: nightly-15
+
     on_start:
       - NOTIFY: myEmail
     on_success:
