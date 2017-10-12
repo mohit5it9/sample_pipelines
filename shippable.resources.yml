@@ -11,3 +11,4 @@ resources:
     integration: gcloudKey   # friendly name of the integration you created         
     pointer:
       sourceName: "cluster-1" # name of the actual cluster in GKE
+      region: "asia-east1-b"
