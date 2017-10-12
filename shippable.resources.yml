@@ -3,7 +3,7 @@ resources:
     type: image
     integration: dockerhub     #friendly name of your integration from step 1         
     pointer:
-      sourceName: busybox    # replace with your image name
+      sourceName: library/busybox    # replace with your image name
     seed:
       versionName: "latest"   #specify the tag of your image.
   - name: op_cluster    # resource friendly name
