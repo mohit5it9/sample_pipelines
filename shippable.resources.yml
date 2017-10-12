@@ -1,9 +1,9 @@
 resources:
   - name: app_image     # resource friendly name
     type: image
-    integration: gcloudKey     #friendly name of your integration from step 1         
+    integration: dockerhub     #friendly name of your integration from step 1         
     pointer:
-      sourceName: gcr.io/lithe-camp-182705/nodetest    # replace with your image name
+      sourceName: busybox    # replace with your image name
     seed:
       versionName: "latest"   #specify the tag of your image.
   - name: op_cluster    # resource friendly name
