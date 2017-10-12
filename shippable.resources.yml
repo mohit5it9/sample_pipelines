@@ -1,13 +1,13 @@
 resources:
   - name: app_image     # resource friendly name
     type: image
-    integration: app_gcr     #friendly name of your integration from step 1         
+    integration: gcloudKey     #friendly name of your integration from step 1         
     pointer:
-      sourceName: devopsrecipes/deploy-gke-basic    # replace with your image name
+      sourceName: gcr.io/lithe-camp-182705/nodetest    # replace with your image name
     seed:
-      versionName: "master.1"   #specify the tag of your image.
+      versionName: "latest"   #specify the tag of your image.
   - name: op_cluster    # resource friendly name
     type: cluster
-    integration: op_int   # friendly name of the integration you created         
+    integration: gcloudKey   # friendly name of the integration you created         
     pointer:
-      sourceName: "app-gke-cluster" # name of the actual cluster in GKE
+      sourceName: "cluster-1" # name of the actual cluster in GKE
