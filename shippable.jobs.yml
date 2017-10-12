@@ -3,7 +3,7 @@ jobs:
     type: manifest
     steps:
      - IN: app_image
-  - name: app_deploy_job
+  - name: appdeployjob
     type: deploy
     steps:
       - IN: app_service_def
