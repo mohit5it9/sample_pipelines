@@ -8,7 +8,7 @@ resources:
       versionName: "latest"   #specify the tag of your image.
   - name: op_cluster    # resource friendly name
     type: cluster
-    integration: gcloudKey   # friendly name of the integration you created         
+    integration: gcloud   # friendly name of the integration you created         
     pointer:
-      sourceName: "cluster-1" # name of the actual cluster in GKE
-      region: "asia-east1-b"
+      sourceName: "testnode2" # name of the actual cluster in GKE
+      region: "asia-east1-a"
