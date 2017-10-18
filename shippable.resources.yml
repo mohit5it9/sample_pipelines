@@ -1,7 +1,7 @@
 resources:
   - name: sn-img-1
     type: image
-    integration: gcloud
+    integration: gke
     pointer:
       sourceName: asia.gcr.io/lithe-camp-182705/nginx
       isPull: true
