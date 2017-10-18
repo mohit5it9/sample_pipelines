@@ -1,12 +1,12 @@
 resources:
-  - name: app_image     # resource friendly name
+  - name: app_image1     # resource friendly name
     type: image
     integration: gcloud     #friendly name of your integration from step 1         
     pointer:
       sourceName: asia.gcr.io/lithe-camp-182705/drydockpython    # replace with your image name
     seed:
       versionName: "latest"   #specify the tag of your image.
-  - name: op_cluster    # resource friendly name
+  - name: op_cluster1    # resource friendly name
     type: cluster
     integration: gcloud   # friendly name of the integration you created         
     pointer:
