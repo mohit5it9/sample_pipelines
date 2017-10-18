@@ -9,12 +9,12 @@ resources:
       versionName: "latest"
    - name: sn-gke-service-lb                               #required
      type: loadBalancer                          #required
-     integration: scriptnull-gke  #Required for use in provision jobs
+     integration: gcloud  #Required for use in provision jobs
      pointer:
        sourceName: "xyz-scriptnull-local"  # the service name (metadata.name)
        method: ClusterIP # the service type Kubernetes default: ClusterIP
-       clusterName: "small-cluster" # The namespace for the service
-       region: "europe-west1-b"
+       clusterName: "testnode2" # The namespace for the service
+       region: "asia-east1-a"
      version:
        ports:
          - name: scriptnull-local-port  # Required for multiple ports, must be a DNS_LABEL
