@@ -3,8 +3,8 @@ jobs:
     type: manifest
     steps:
      - IN: app_image
-  - name: appdeployjob
-    type: deploy
-    steps:
-      - IN: app_service_def
-      - IN: op_cluster
+  #- name: appdeployjob
+  #  type: deploy
+  #  steps:
+  #    - IN: app_service_def
+  #    - IN: op_cluster
