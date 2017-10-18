@@ -13,7 +13,7 @@ resources:
     pointer:
       sourceName: "xyz-scriptnull-local"  # the service name (metadata.name)
       method: ClusterIP # the service type Kubernetes default: ClusterIP
-      clusterName: "testnode2" # The namespace for the service
+      clusterName: "testnode1" # The namespace for the service
       region: "asia-east1-a"
     version:
       ports:
