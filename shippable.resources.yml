@@ -3,7 +3,7 @@ resources:
     type: image
     integration: gcloud     #friendly name of your integration from step 1         
     pointer:
-      sourceName: asia.gcr.io/lithe-camp-182705/nginx    # replace with your image name
+      sourceName: asia.gcr.io/lithe-camp-182705/drydockpython    # replace with your image name
     seed:
       versionName: "latest"   #specify the tag of your image.
   - name: op_cluster1    # resource friendly name
