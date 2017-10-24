@@ -5,7 +5,7 @@ resources:
     pointer:
       sourceName: asia.gcr.io/lithe-camp-182705/nginx    # replace with your image name
     seed:
-      versionName: "stable"   #specify the tag of your image.
+      versionName: "latest"   #specify the tag of your image.
   - name: op_cluster1    # resource friendly name
     type: cluster
     integration: gcloud   # friendly name of the integration you created         
