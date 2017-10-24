@@ -1,7 +1,7 @@
 resources:
   - name: sn-img-1
     type: image
-    integration: gke
+    integration: gcloud
     pointer:
       sourceName: asia.gcr.io/lithe-camp-182705/nginx
       isPull: true
@@ -9,11 +9,11 @@ resources:
       versionName: "latest"
   - name: sn-gke-service-lb                               #required
     type: loadBalancer                          #required
-    integration: gke  #Required for use in provision jobs
+    integration: gcloud  #Required for use in provision jobs
     pointer:
-      sourceName: "xyz-scriptnull-local-new"  # the service name (metadata.name)
+      sourceName: "xyz-scriptnull-local"  # the service name (metadata.name)
       method: ClusterIP # the service type Kubernetes default: ClusterIP
-      clusterName: "testnode1" # The namespace for the service
+      clusterName: "testnode2" # The namespace for the service
       region: "asia-east1-a"
     version:
       ports:
