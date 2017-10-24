@@ -14,7 +14,7 @@ resources:
       sourceName: "xyz-scriptnull-local"  # the service name (metadata.name)
       method: ClusterIP # the service type Kubernetes default: ClusterIP
       clusterName: "cluster-1" # The namespace for the service
-      region: "asia-central1-a"
+      region: "us-central1-a"
     version:
       ports:
         - name: scriptnull-local-port  # Required for multiple ports, must be a DNS_LABEL
