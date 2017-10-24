@@ -15,7 +15,7 @@ resources:
       method: ClusterIP # the service type Kubernetes default: ClusterIP
       clusterName: "testnode2" # The namespace for the service
       region: "asia-east1-a"
-      namespace: "default123"    # optional
+      namespace: "default"    # optional
     version:
       ports:
         - name: scriptnull-local-port  # Required for multiple ports, must be a DNS_LABEL
