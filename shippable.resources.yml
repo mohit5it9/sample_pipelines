@@ -9,6 +9,6 @@ resources:
   - name: op_cluster1    # resource friendly name
     type: cluster
     integration: gcloud   # friendly name of the integration you created         
-    #pointer:
-      #sourceName: "testnode2" # name of the actual cluster in GKE
+    pointer:
+      sourceName: "testnode2" # name of the actual cluster in GKE
       #region: "asia-east1-a"
