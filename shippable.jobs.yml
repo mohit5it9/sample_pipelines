@@ -5,6 +5,7 @@ jobs:
      - IN: app_image1
   - name: appdeployjob1
     type: deploy
+    method: upgrade
     steps:
       - IN: app_service_def1
       - IN: op_cluster1
