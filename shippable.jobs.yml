@@ -6,8 +6,8 @@ jobs:
       - IN: myGclCliConfig
       - TASK:
         # Execute Ansible playbook
-        - script: export email="$(echo MYGCLCLICONFIG_INTEGRATION_JSON_KEY | jq -r "client_email")" 
-        - script: export projectId="$(echo MYGCLCLICONFIG_INTEGRATION_JSON_KEY | jq -r "project_id")"
+        - script: export email="$(echo "$MYGCLCLICONFIG_INTEGRATION_JSON_KEY" | jq -r "client_email")" 
+        - script: export projectId="$(echo "$MYGCLCLICONFIG_INTEGRATION_JSON_KEY" | jq -r "project_id")"
         - script: echo "$email"
         - script: |
             cd $MYGITHUBREPO_STATE  
