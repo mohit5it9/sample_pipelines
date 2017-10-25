@@ -1,12 +1,11 @@
 jobs:
-  - name: app_service_def1
-    type: manifest
+  - name: myProvisionJob
+    type: runSh
     steps:
-     - IN: app_image1
-  - name: appdeployjob1
-    type: deploy
-    #method: upgrade
-    #method: replace
-    steps:
-      - IN: app_service_def1
-      - IN: op_cluster1
+      - IN: myGithubRepo
+      - IN: myGclCliConfig
+      - TASK:
+        # Execute Ansible playbook
+        - script: |
+            cd $MYGITHUBREPO_STATE  
+            ansible-playbook -v google-cloud-provision.yml
