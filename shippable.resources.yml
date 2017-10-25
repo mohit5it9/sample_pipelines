@@ -1,14 +1,13 @@
 resources:
-  - name: app_image1     # resource friendly name
-    type: image
-    integration: gcloud     #friendly name of your integration from step 1         
+# config for google cloud cli
+  - name: myGclCliConfig
+    type: cliConfig
+    integration: gcloud # replace with your Google Cloud integration name
+
+# source code repo holding Ansible scripts to be used in pipeline
+  - name: myGithubRepo
+    type: gitRepo
+    integration: github # replace with your scm integration name
     pointer:
-      sourceName: asia.gcr.io/lithe-camp-182705/nginx    # replace with your image name
-    seed:
-      versionName: "stable"   #specify the tag of your image.
-  - name: op_cluster1    # resource friendly name
-    type: cluster
-    integration: gcloud   # friendly name of the integration you created         
-    pointer:
-      sourceName: "testnode2" # name of the actual cluster in GKE
-      region: "asia-east1-a"
+      sourcename: mohit5it9/repo
+      branch: master
