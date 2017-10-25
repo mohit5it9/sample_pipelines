@@ -9,5 +9,5 @@ resources:
     type: gitRepo
     integration: github # replace with your scm integration name
     pointer:
-      sourcename: "mohit5it9/repo"
+      sourceName: "mohit5it9/repo"
       branch: "master"
