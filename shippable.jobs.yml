@@ -12,8 +12,9 @@ jobs:
         - script: pwd
         - script: ls -al
         - script: export int_path="$(shipctl get_resource_meta "$MYGCLCLICONFIG_NAME")/key.json"
-        - script: export email="$(shipctl get_json_value "key.json" "client_email")"
-        - script: export projectId="$(shipctl get_json_value "key.json" "project_id")"
+        - script: echo "path is $(shipctl get_resource_meta "$MYGCLCLICONFIG_NAME")/key.json"
+        - script: export email="$(shipctl get_json_value "$int_path" "client_email")"
+        - script: export projectId="$(shipctl get_json_value "$int_path" "project_id")"
         - script: echo "$email"
         - script: |
             cd $MYGITHUBREPO_STATE  
