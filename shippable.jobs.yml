@@ -10,7 +10,7 @@ jobs:
         #- script: export projectId="$(echo "$MYGCLCLICONFIG_INTEGRATION_JSON_KEY" | jq -r '.project_id')"
         - script: export CREDENTIALFILE_PATH="$(shipctl get_resource_meta "$MYGCLCLICONFIG_NAME")/key.json"
         - script: echo "path is $(shipctl get_resource_meta "$MYGCLCLICONFIG_NAME")/key.json"
-        - script: export SERVICEACCOUNTEMAIL="$(shipctl get_json_value "$int_path" "client_email")"
+        - script: export SERVICEACCOUNTEMAIL="$(shipctl get_json_value "$CREDENTIALFILE_PATH" "client_email")"
         - script: export PROJECTID="$(shipctl get_json_value "$int_path" "project_id")"
         - script: echo "$PROJECTID"
         - script: |
