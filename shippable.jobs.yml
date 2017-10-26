@@ -11,7 +11,7 @@ jobs:
         - script: export CREDENTIALFILE_PATH="$(shipctl get_resource_meta "$MYGCLCLICONFIG_NAME")/key.json"
         - script: echo "path is $(shipctl get_resource_meta "$MYGCLCLICONFIG_NAME")/key.json"
         - script: export SERVICEACCOUNTEMAIL="$(shipctl get_json_value "$CREDENTIALFILE_PATH" "client_email")"
-        - script: export PROJECTID="$(shipctl get_json_value "$int_path" "project_id")"
+        - script: export PROJECTID="$(shipctl get_json_value "$CREDENTIALFILE_PATH" "project_id")"
         - script: echo "$PROJECTID"
         - script: |
             cd $MYGITHUBREPO_STATE  
