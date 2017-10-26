@@ -8,10 +8,10 @@ jobs:
         # Execute Ansible playbook
         #- script: export email="$(echo "$MYGCLCLICONFIG_INTEGRATION_JSON_KEY" | jq -r '.client_email')" 
         #- script: export projectId="$(echo "$MYGCLCLICONFIG_INTEGRATION_JSON_KEY" | jq -r '.project_id')"
-        - script: export int_path="$(shipctl get_resource_meta "$MYGCLCLICONFIG_NAME")/key.json"
+        - script: export CREDENTIALFILE_PATH="$(shipctl get_resource_meta "$MYGCLCLICONFIG_NAME")/key.json"
         - script: echo "path is $(shipctl get_resource_meta "$MYGCLCLICONFIG_NAME")/key.json"
-        - script: export email="$(shipctl get_json_value "$int_path" "client_email")"
-        - script: export projectId="$(shipctl get_json_value "$int_path" "project_id")"
+        - script: export SERVICEACCOUNTEMAIL="$(shipctl get_json_value "$int_path" "client_email")"
+        - script: export PROJECTID="$(shipctl get_json_value "$int_path" "project_id")"
         - script: echo "$email"
         - script: |
             cd $MYGITHUBREPO_STATE  
