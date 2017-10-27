@@ -1,4 +1,11 @@
 jobs:
+  - name: deploy-gke-basic_runCI
+    type: runCI
+    flags:
+      - deploy-gke-basic
+    steps:
+      - OUT: deploy-gke-basic-image
+
   - name: deploy-gke-basic-manifest
     type: manifest
     flags:
