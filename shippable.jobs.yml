@@ -1,15 +1,20 @@
 jobs:
-  - name: app_service_def1
+  - name: deploy-gke-basic-manifest
     type: manifest
+    flags:
+      - deploy-gke-basic
     steps:
-     - IN: app_image1
+     - IN: deploy-gke-basic-image
      - IN: deploy-gke-basic-docker-options
      - IN: deploy-gke-basic-params
      - IN: deploy-gke-basic-replicas
-  - name: appdeployjob1
+
+  - name: deploy-gke-basic-deploy
     type: deploy
-    #method: upgrade
-    #method: replace
+    flags:
+      - deploy-gke-basic
     steps:
-      - IN: app_service_def1
-      - IN: op_cluster1
+      - IN: deploy-gke-basic-manifest
+      - IN: deploy-gke-basic-gke-cluster
+      - TASK: managed
+        deployMethod: replace
