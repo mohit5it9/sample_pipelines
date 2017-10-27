@@ -5,7 +5,7 @@ jobs:
      - IN: app_image1
      - IN: deploy-gke-basic-docker-options
      - IN: deploy-gke-basic-params
-     - IN: deploy-gke-basic-replicas
+     #- IN: deploy-gke-basic-replicas
   - name: appdeployjob1
     type: deploy
     #method: upgrade
