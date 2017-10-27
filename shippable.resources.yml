@@ -19,8 +19,8 @@ resources:
       - deploy-gke-basic
     version:
       memory: 100
-      portMappings:
-        - 80:80
+      #portMappings:
+      #  - 80:80
 
 
   - name: deploy-gke-basic-params
