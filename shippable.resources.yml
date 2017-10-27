@@ -20,7 +20,7 @@ resources:
     version:
       memory: 100
       portMappings:
-        - 80:801
+        - 80:80
 
 
   - name: deploy-gke-basic-params
@@ -29,7 +29,7 @@ resources:
       - deploy-gke-basic
     version:
       params:
-        PORT: 802
+        PORT: 80
         ENVIRONMENT: "dev"
 
   - name: deploy-gke-basic-replicas
