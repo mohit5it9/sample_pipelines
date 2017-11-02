@@ -1,40 +1,14 @@
 resources:
-  - name: app_image1     # resource friendly name
+  - name: app_image1_nginx     # resource friendly name
     type: image
-    integration: gcloud     #friendly name of your integration from step 1         
+    integration: dockerhub     #friendly name of your integration from step 1         
     pointer:
-      sourceName: asia.gcr.io/lithe-camp-182705/nginx    # replace with your image name
+      sourceName: mohit5it9/nginx    # replace with your image name
     seed:
-      versionName: "stable"   #specify the tag of your image.
-  - name: op_cluster1    # resource friendly name
+      versionName: "latest"   #specify the tag of your image.
+  - name: op_cluster1_dcl    # resource friendly name
     type: cluster
-    integration: gcloud   # friendly name of the integration you created         
+    integration: dclKey   # friendly name of the integration you created         
     pointer:
-      sourceName: "testnode12" # name of the actual cluster in GKE
-      region: "asia-east1-a"
+      sourceName: "dcl-cluster" # name of the actual cluster in GKE
 
-  - name: deploy-gke-basic-docker-options
-    type: dockerOptions
-    flags:
-      - deploy-gke-basic
-    version:
-      memory: 100
-      #portMappings:
-      #  - 80:80
-
-
-  - name: deploy-gke-basic-params
-    type: params
-    flags:
-      - deploy-gke-basic
-    version:
-      params:
-        PORT: 80
-        ENVIRONMENT: "dev"
-
-  - name: deploy-gke-basic-replicas
-    type: replicas
-    flags:
-      - deploy-gke-basic
-    version:
-      count: 2
