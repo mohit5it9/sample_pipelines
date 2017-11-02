@@ -3,9 +3,9 @@ resources:
     type: image
     integration: dockerhub     #friendly name of your integration from step 1         
     pointer:
-      sourceName: mohit5it9/nginx    # replace with your image name
+      sourceName: ankul/nginx    # replace with your image name
     seed:
-      versionName: "latest"   #specify the tag of your image.
+      versionName: "master.25"   #specify the tag of your image.
   - name: op_cluster1_dcl    # resource friendly name
     type: cluster
     integration: dclKey   # friendly name of the integration you created         
