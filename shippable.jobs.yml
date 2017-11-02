@@ -6,7 +6,7 @@ jobs:
      #- IN: deploy-gke-basic-docker-options
      #- IN: deploy-gke-basic-params
      #- IN: deploy-gke-basic-replicas
-  - name: appdeployjob1_dcl
+  - name: appdeployjobdcl
     type: deploy
     #method: upgrade
     #method: replace
