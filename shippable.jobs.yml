@@ -1,15 +1,15 @@
 jobs:
-  - name: app_service_def1
+  - name: app_service_def1_dcl
     type: manifest
     steps:
-     - IN: app_image1
+     - IN: app_image1_nginx
      #- IN: deploy-gke-basic-docker-options
      #- IN: deploy-gke-basic-params
      #- IN: deploy-gke-basic-replicas
-  - name: appdeployjob1
+  - name: appdeployjob1_dcl
     type: deploy
     #method: upgrade
     #method: replace
     steps:
-      - IN: app_service_def1
-      - IN: op_cluster1
+      - IN: app_service_def1_dcl
+      - IN: op_cluster1_dcl
