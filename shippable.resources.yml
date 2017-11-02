@@ -10,5 +10,5 @@ resources:
     type: cluster
     integration: dclKey   # friendly name of the integration you created         
     pointer:
-      sourceName: "dcl-cluster" # name of the actual cluster in GKE
+      sourceName: "dcl" # name of the actual cluster in GKE
 
