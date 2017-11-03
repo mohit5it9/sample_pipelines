@@ -1,7 +1,7 @@
 resources:
   - name: app_image1_nginx     # resource friendly name
     type: image
-    integration: dockerhub1    #friendly name of your integration from step 1         
+    integration: dockerhub    #friendly name of your integration from step 1         
     pointer:
       sourceName: ankul/nginx    # replace with your image name
     seed:
