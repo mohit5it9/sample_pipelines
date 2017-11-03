@@ -5,10 +5,10 @@ resources:
     pointer:
       sourceName: ankul/nginx    # replace with your image name
     seed:
-      versionName: "master.25"   #specify the tag of your image.
+      versionName: "master.26"   #specify the tag of your image.
   - name: op_cluster1_dcl    # resource friendly name
     type: cluster
-    integration: dclKey   # friendly name of the integration you created         
+    integration: dcl   # friendly name of the integration you created         
     pointer:
       sourceName: "dcl-cluster" # name of the actual cluster in GKE
 
