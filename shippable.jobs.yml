@@ -9,7 +9,7 @@ jobs:
   - name: appdeployjobdcl
     type: deploy
     #method: upgrade
-    #method: replace
+    method: replace
     steps:
       - IN: app
       - IN: op_cluster1_dcl
