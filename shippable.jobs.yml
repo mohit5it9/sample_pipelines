@@ -8,8 +8,8 @@ jobs:
      #- IN: deploy-gke-basic-replicas
   - name: appdeployjobdcl
     type: deploy
-    #method: upgrade
-    method: replace
+    method: upgrade
+    #method: replace
     steps:
       - IN: app
       - IN: op_cluster1_dcl
