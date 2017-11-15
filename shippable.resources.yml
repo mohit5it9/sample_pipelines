@@ -11,7 +11,7 @@ resources:
     integration: aws   # friendly name of the integration you created         
     pointer:
       sourceName: "aws-cluster" # name of the actual cluster in GKE
-      region: "us-east1"
+      region: "us-east-1"
 
   #- name: deploy-gke-basic-docker-options
   #  type: dockerOptions
