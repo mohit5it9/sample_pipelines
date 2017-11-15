@@ -6,7 +6,7 @@ jobs:
   - name: appdeployjob1
     type: deploy
     #method: upgrade
-    #method: replace
+    method: replace
     steps:
       - IN: app_service_def1
       - IN: op_cluster1
