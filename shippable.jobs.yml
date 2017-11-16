@@ -21,9 +21,9 @@ jobs:
       - TASK: managed
         bump: rc
 
-  - name: foo-app-ci
-    type: jenkinsJob
-    integration: "jenkins"
-    pointer:
-      sourceName: "firstjob"
+  #- name: foo-app-ci
+  #  type: jenkinsJob
+  #  integration: "jenkins"
+  #  pointer:
+  #    sourceName: "firstjob"
 
