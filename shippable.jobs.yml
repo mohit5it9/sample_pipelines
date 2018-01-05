@@ -32,10 +32,10 @@ jobs:
       - IN: mohit-1
       - IN: dv-params
 
-    on_start:
-      - NOTIFY: myEmail
-    on_success:
-      - NOTIFY: irc
+    #on_start:
+    #  - NOTIFY: myEmail
+    #on_success:
+    #  - NOTIFY: irc
     flags:
       - manifestFlag
       - deployFlag
