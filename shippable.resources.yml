@@ -160,35 +160,35 @@ resources:
   #   integration: jatin-dcl
   #   pointer:
   #     sourceName: "cluster-dcl"
-  - name: slackNotification
-    type: notification
-    integration: slack
-    pointer:
-      recipients:
-        - "#slack_notifications"
+  #- name: slackNotification
+  #  type: notification
+  #  integration: slack
+  #  pointer:
+  #    recipients:
+  #      - "#slack_notifications"
   
-  - name: hipchat
-    type: notification
-    integration: hipchat
-    pointer:
-      recipients:
-        - "#Ship-aye"
+  #- name: hipchat
+  #  type: notification
+  #  integration: hipchat
+  #  pointer:
+  #    recipients:
+  #      - "#Ship-aye"
 
   - name: scale
     type: replicas
     version:
       count: 2
 
-  - name: myEmail
-    type: notification
-    pointer:
-      method: email
-      recipients: 
-        -  "mohit@shippable.com"
+  #- name: myEmail
+  #  type: notification
+  #  pointer:
+  #    method: email
+  #    recipients: 
+  #      -  "mohit@shippable.com"
 
-  - name: irc
-    type: notification
-    pointer:
-      method: irc
-      recipients: 
-        -  "chat.freenode.net#test-rc"
+  #- name: irc
+  #  type: notification
+  #  pointer:
+  #    method: irc
+  #    recipients: 
+  #      -  "chat.freenode.net#test-rc"
